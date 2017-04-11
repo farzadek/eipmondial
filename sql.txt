@@ -1,0 +1,123 @@
+use eip;
+
+CREATE TABLE IF NOT EXISTS `member` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `vpcode` varchar(10) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `famil` varchar(40) NOT NULL,
+  `adress` varchar(60) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `province` varchar(20) NOT NULL,
+  `postal` varchar(6) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `phone1` varchar(15) DEFAULT NULL,
+  `phone2` varchar(15) DEFAULT NULL,
+  `pident1` varchar(30) DEFAULT NULL,
+  `pident2` varchar(30) DEFAULT NULL,
+  `demand` tinyint(1) NOT NULL,
+  `pidentno1` varchar(30) DEFAULT NULL,
+  `pidentno2` varchar(30) DEFAULT NULL,
+  `membrtype` int(11) DEFAULT NULL,
+  `dure` int(11) NOT NULL,
+  `payments` datetime NOT NULL,
+  `refno` varchar(10) NOT NULL,
+  `today` datetime NOT NULL,
+  `demand1` tinyint(1) NOT NULL,
+  `demand2` tinyint(1) NOT NULL,
+  `demand3` tinyint(1) NOT NULL,
+  `demand4` tinyint(1) NOT NULL,
+  `demand5` tinyint(1) NOT NULL,
+  `demand6` tinyint(1) NOT NULL,
+  `demand7` tinyint(1) NOT NULL,
+  `demand8` tinyint(1) NOT NULL,
+  `demand9` tinyint(1) NOT NULL,
+  `demand10` tinyint(1) NOT NULL,
+  `demand11` tinyint(1) NOT NULL,
+  `demand12` tinyint(1) NOT NULL,
+  `price` float DEFAULT NULL,
+  `active` tinyint(1) NOT NULL,  
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(40) NOT NULL,
+  `password` varchar(60) NOT NULL,
+  `type` int(11) NOT NULL DEFAULT '0',
+  `active` tinyint(1) NOT NULL DEFAULT '1',
+  `image` varchar(50) DEFAULT NULL,
+  `name` varchar(40) DEFAULT NULL,
+  `vpcode` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`, `type`, `active`, `image`, `name`, `vpcode`) VALUES
+(1, 'aaa', 'aaa', 0, 1, NULL, 'farzad', 'vp16101'),
+(2, 'bbb', 'bbb', 2, 1, NULL, 'eric ouellette', 'vp16102');
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS `member` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `vpcode` varchar(10) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `famil` varchar(40) NOT NULL,
+  `adress` varchar(60) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `province` varchar(20) NOT NULL,
+  `postal` varchar(6) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `phone1` varchar(15) DEFAULT NULL,
+  `phone2` varchar(15) DEFAULT NULL,
+  `pident1` varchar(30) DEFAULT NULL,
+  `pident2` varchar(30) DEFAULT NULL,
+  `demand` tinyint(1) NOT NULL,
+  `pidentno1` varchar(30) DEFAULT NULL,
+  `pidentno2` varchar(30) DEFAULT NULL,
+  `membrtype` int(11) DEFAULT NULL,
+  `dure` int(11) NOT NULL,
+  `payments` datetime NOT NULL,
+  `refno` varchar(10) NOT NULL,
+  `today` datetime NOT NULL,
+  `demand1` tinyint(1) NOT NULL,
+  `demand2` tinyint(1) NOT NULL,
+  `demand3` tinyint(1) NOT NULL,
+  `demand4` tinyint(1) NOT NULL,
+  `demand5` tinyint(1) NOT NULL,
+  `demand6` tinyint(1) NOT NULL,
+  `demand7` tinyint(1) NOT NULL,
+  `demand8` tinyint(1) NOT NULL,
+  `demand9` tinyint(1) NOT NULL,
+  `demand10` tinyint(1) NOT NULL,
+  `demand11` tinyint(1) NOT NULL,
+  `demand12` tinyint(1) NOT NULL,
+  `price` float DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS `certificate` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `startdate` timestamp NOT NULL,
+  `vpcode` varchar(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+
+
+
+

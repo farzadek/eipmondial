@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EIP</title>
+
+<style>
+
+.hidden {
+  display: none;
+}
+
+.button {
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  width: 220px;
+  height: 40px;
+  top: 2px;
+  left: 2px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.button:hover {
+  background: #37BE77;
+}
+.button img {
+  position: absolute;
+  z-index: 2;
+  top: 16px;
+  left: 15px;
+  opacity: 0;
+}
+
+.circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  top: 2px;
+  left: 72px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-dasharray: 183 183;
+  stroke-dashoffset: 183;
+  pointer-events: none;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+input:checked ~ .button {
+  -webkit-animation: button .5s ease both, fill .5s ease-out 1.5s forwards;
+          animation: button .5s ease both, fill .5s ease-out 1.5s forwards;
+}
+input:checked ~ .button img {
+  -webkit-animation: check .5s ease-out 1.5s both;
+          animation: check .5s ease-out 1.5s both;
+}
+input:checked ~ .circle {
+  -webkit-animation: circle 2s ease-out .5s both;
+          animation: circle 2s ease-out .5s both;
+}
+
+@-webkit-keyframes button {
+  0% {
+    width: 220px;
+    left: 70px;
+    border-color: #fff;
+    color: #fff;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    width: 60px;
+    left: 72px;
+    border-color: #45B078;
+    background: transparent;
+    color: transparent;
+  }
+}
+
+@keyframes button {
+  0% {
+    width: 220px;
+    left: 70px;
+    border-color: #fff;
+    color: #fff;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    width: 60px;
+    left: 72px;
+    border-color: #45B078;
+    background: transparent;
+    color: transparent;
+  }
+}
+@-webkit-keyframes circle {
+  0% {
+    stroke-dashoffset: 183;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 183;
+    -webkit-transform: rotate(-90deg) scale(1);
+            transform: rotate(-90deg) scale(1);
+    opacity: 1;
+  }
+  90%, 100% {
+    stroke-dasharray: 500 500;
+    -webkit-transform: rotate(-90deg) scale(2);
+            transform: rotate(-90deg) scale(2);
+    opacity: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    stroke-dashoffset: 183;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 183;
+    -webkit-transform: rotate(-90deg) scale(1);
+            transform: rotate(-90deg) scale(1);
+    opacity: 1;
+  }
+  90%, 100% {
+    stroke-dasharray: 500 500;
+    -webkit-transform: rotate(-90deg) scale(2);
+            transform: rotate(-90deg) scale(2);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fill {
+  0% {
+    background: transparent;
+    border-color: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes fill {
+  0% {
+    background: transparent;
+    border-color: #fff;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes check {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes check {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body{
+	background:#666;
+}
+
+
+
+
+</style>
+</head>
+
+
+
+<body>
+
+    <section id="notreequipe" class="content-section text-center" style="padding:0;margin:0;overflow:hidden;">
+		
+		<div class="col-lg-12" style="position:absolute;width:100%;">
+			<video width="100%" height="100%" autoplay>
+			  <source src="img/film1.mp4" type="video/mp4">
+			  <source src="img/film.ogv" type="video/ogv">
+			  <source src="img/film.webm" type="video/webm">
+			</video>
+		</div>
+		
+		<div style="position:absolute;">
+			<h2 style="color: #ffffb3; text-shadow: 1px 1px 3px #666;">Notre Équipe</h2>
+			<div class="row" style="margin-bottom:10px;">
+				<div class="col-lg-4 col-lg-offset-4 col-sm-4 col-sm-offset-4 col-xs-12">
+
+					<div id="equipe1">
+						<img class="president-image" src="img/yan.jpg" width="180" height="180">
+						<a class="equipe_contact" href="mailto:yanbeaucage@eipmondial.com?subject=a message from EIP website">Contact</a>
+					</div>
+					<p style="color:#ddd;">Yan Beaucage<br/><span style="font-size:.7em;">Président Fondateur</span></p>	
+					
+				</div>		
+			</div>	
+			<div class="row" style="margin-bottom:10px;">
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div id="equipe2">
+						<img class="employ-image" src="img/sam.jpg" width="140" height="140">
+						<a class="equipe_contact" href="mailto:samuelmartin@eipmondial.com?subject=a message from EIP website">Contact</a>
+					</div>
+					<p style="color:#ddd;margin-top:-40px;">Samuel Martin<br/><span style="font-size:.7em;">Directeur Général</span></p>	
+				</div>		
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div id="equipe2">
+						<img class="employ-image" src="img/photovanessaweb.jpg" width="140" height="140">
+						<a class="equipe_contact" href="mailto:farzadek@gmail.com?subject=a message from EIP website">Contact</a>
+					</div>
+					<p style="color:#ddd;margin-top:-40px;">Farzad Kamali<br/><span style="font-size:.7em;">Webmestre</span></p>	
+				</div>		
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div id="equipe2">
+						<img class="employ-image" src="img/vanes.jpg" width="140" height="140">
+						<a class="equipe_contact" href="mailto:serviceclient@eipmondial.com?subject=a message from EIP website">Contact</a>
+					</div>
+					<p style="color:#ddd;margin-top:-40px;">Vanessa Farley<br/><span style="font-size:.7em;">Adjoint Administratif</span></p>	
+				</div>		
+			</div>	
+		</div>	
+    </section>
+
+
+
+
+   <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+	<script>
+
+
+
+	</script>
+</body>
+
+</html>
+

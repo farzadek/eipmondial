@@ -1,0 +1,682 @@
+@h1a: #012;
+@marqueeText: #06a4e6;
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat;
+    color: #fff;
+    background-color: white;
+    webkit-tap-highlight-color: fade(white, 20%);
+    padding-top: 70px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 0 4px black;
+    color: @h1a;
+}
+
+nav{
+    background: url(img/header.jpg) no-repeat top center;
+    background-size:100% auto;
+    box-shadow:0 0 20px 13px #083b6e;
+    width: 100%;
+    padding-right: 3%;
+    box-sizing: border-box;
+    img{
+        float:left;
+        left:3%;
+        position:absolute;
+    }
+    a{
+        color: white;
+    }
+    p{
+        font: 18px/20px lora;
+        color: @h1a;
+        font-weight: 400;
+    }
+}
+.circle{
+    border-radius: 50%;
+}
+.colorWhite{
+    color: white;
+}
+.mgbtn10{
+    margin-bottom:10px;
+}
+.btn {
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0;
+    display: table;
+}
+.btn-default {
+    border: 1px solid #42dca3;
+    color: #42dca3;
+    background-color: transparent;
+}
+.btn-default:hover{
+    border: 1px solid #42dca3;
+    outline: none;
+    color: black;
+    background-color: #42dca3;
+}
+.content-section {
+  padding-top: 70px;
+}
+
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    box-sizing: border-box;
+    width: 100%;
+    .navbar-toggle {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 16px;
+        color: white;
+    }
+    .navbar-toggle:focus{
+        outline: none;
+    }
+    .navbar-toggle:active {
+        outline: none;
+    }
+    .navbar-brand {
+        font-weight: 700;
+    }
+    .navbar-brand:focus {
+        outline: none;
+    }
+    a {
+        color: white;
+        text-shadow: 0 0 3px 2px #444;
+    }
+    .nav{
+        li{
+            a{                
+                -webkit-transition: background 0.3s ease-in-out;
+                -moz-transition: background 0.3s ease-in-out;
+                transition: background 0.3s ease-in-out;
+                text-shadow: 2px 2px 1px #444;
+                &:hover{
+                    color: rgba(77, 255, 136, 0.9);
+                    outline: none;
+                    background-color: transparent;
+                }
+                &:active{
+                    outline: none;
+                    background-color: transparent;
+                }
+                &:focus{
+                    outline: none;
+                    background-color: transparent;
+                }
+            }
+            .active{
+                outline: none;
+                a {
+                    background-color: rgba(255, 255, 255, 0.3);
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 7px;
+}
+
+/* ========== ACCUEIL ========== */
+#accueil{
+    background-color:#fff;
+    color: #14426f;
+    margin-bottom: 30px;
+    p{
+        font: 2em/1.2em roboto;
+    }
+    h1{
+        margin-top: 30px;
+        font-size: 3em;
+    }
+}
+
+#marquee{
+    margin-bottom: 40px;
+    font: 2em/1.5em roboto;
+    div{
+        background-color:#012;
+        color: @marqueeText;
+    }
+    marquee{
+        span{
+            color: white;
+            margin: 0 1em;
+        }
+        span1{
+            color: white;
+        }
+    }
+}
+
+/* ========== STATISTICS ========== */
+#statistics{
+    margin: 20px 0;
+    h1{
+        text-align: center;
+        margin: 20px 0;
+    }
+    div{
+        div{ 
+            p{
+                font: 18px/18px Montserrat;
+                margin-top: 15px;
+                color: #012;
+                text-align: center;
+            }
+            div{
+                border: 2px solid black;
+                box-shadow: 0 0 5px black;
+                width: 200px;
+                height: 200px;
+                background-color: #012;
+                margin: 40px 0;
+                margin: 0 auto;
+                p{
+                    font: 48px/170px Montserrat;
+                    color: #ec1100;
+                    text-align: center;
+                    text-shadow: 0 0 5px #d4a200;
+                }
+            }
+        }
+    }
+}
+
+/* ========== NOTRE EQUIPE ========== */
+#notreequipe{
+    background: url(img/hand_shake.jpg) no-repeat center center;
+    background-size: cover;
+    position:relative;
+    padding:0;
+    margin:0;
+    verflow:hidden;
+    box-shadow:0 0 20px 13px #04111e;
+    h1{
+        color: #ffffb3;
+    }
+    h3{
+        font-size: 140%;
+    }
+    .div1{
+        position:absolute;
+        width:100%;
+        height:100%;
+        padding:0;
+    }
+    .div2{
+        margin:0;
+        background-color:rgba(20,30,40,0.5);
+        position:absolute;
+        width:100%;
+        height:100%;
+        padding:0;
+    }
+    .div3{
+        overflow:hidden;
+        margin-top:60px;
+    }
+    .row{
+        margin-bottom:10px;
+        p{
+            color:#ddd;
+            text-shadow: 0px 0px 3px black;
+            font: 1.8em/1em lora;
+            span{
+                font-size:.7em;
+            }
+        }
+    }
+    #equipe1{
+        -webkit-transition-timing-function: ease;
+        transition-timing-function: ease;
+        -webkit-transition: width .5s;
+        transition: width .5s;
+        width:180px;
+        height:180px;
+        overflow:hidden;
+        margin:0 auto;
+        left:50%;
+        &:hover{
+            width:280px;
+            text-decoration: none;
+        }
+        .president-image{
+            border-radius:50%;
+            -webkit-border-radius:50%;
+            -moz-border-radius:50%;
+            border:3px solid #fff;
+            float:left;
+        }
+    }
+    .equipe_contact{
+        padding:5px;
+        font-size:18px;
+        float:right;
+        margin-top:70px;
+        border-radius:6px;
+        -webkit-border-radius:6px;
+        -moz-border-radius:6px;
+        border:2px solid #fff;
+        color:white;
+        background-color:#112233;
+        text-decoration: none;
+    }
+}
+
+.motfondateur{
+    h2{
+        color: #ffffb3;
+        font-size: 1.7em;
+    }
+    p {
+        font:1.6em/1.5em roboto;
+        color:#dff;
+    }
+    background-color:rgba(10,30,40,0.75);
+    width:100%;
+    display:inline-block;
+    padding-top:10px;
+    margin-bottom:-5px;
+    box-shadow:0 0 15px 7px #04111e;
+}
+
+
+/* ========== SOLUTION ========== */
+#solution{
+    background-color:#222;
+    background-image:url(img/mapimage.png);
+    background-position:top center;
+    background-repeat:no-repeat;
+    padding-bottom:20px;
+    .div1{
+        padding-top:50px; 
+        margin-top:-100px; 
+        height: 100%; 
+        background-color:rgba(10,225,255,0.4); 
+        padding-bottom:20px; 
+        box-shadow:0 0 25px 7px rgba(10,225,255,0.4);
+    }
+    .container{
+        .div2{
+            margin:5px 0;
+            text-shadow:1px 1px 2px #00f;
+        }
+        h3{
+            span{
+                color:#29ddff;
+                text-shadow:1px 1px 3px #000;
+            }
+        }
+        .h3-1{
+            color:#fff;
+            text-shadow:0 0 3px #333;
+        }
+    }
+}
+
+/* ========== CONTACT ========== */
+#joindre{
+    padding-top:30px;
+    h1{
+        color: #ffffb3;
+    }
+}
+.after-joindre{
+    padding:5px 10px;
+    color:#fff;
+    label{
+        font-size:1.2em;
+        text-shadow:0 0 3px #333;
+    }
+    .div4{
+        color: rgb(179, 255, 179); 
+        font-size: 1.4em;
+    }
+}
+.telLink{
+    color:#fff;
+    text-shadow:0 0 3px #333;
+    font: 1.5em/3em Montserrat;
+    display: block;
+    &:hover{
+        text-decoration: none;
+        text-shadow: 0 0 4px white;
+        color: white;
+    }
+}
+
+/* ========== CARRIER ========== */
+
+#carrier{
+    padding-top:80px;
+    background-color:#fff;
+    display: none;
+    .car1{
+        border-radius:50%;
+        box-shadow:0 0 5px 1px #555;
+        float:right;
+        margin:-20px 20px 0 0;
+        width:20px;
+        height:20px;
+        text-align:center;
+        color:#666;
+        cursor:pointer;
+        span{
+            margin-top:5px;
+        }
+    }
+    h2{
+        color: #14426f; 
+        text-shadow: 0 0 3px #444; 
+        text-align:center;
+    }
+    .container{
+        .car2{
+            margin:5px 0;
+            p{
+                span{
+                    color:#14426f;
+                    &:nth-child(1){
+                        font-size:1.3em;
+                        font-weight:600;
+                    }
+                    &:nth-child(2){
+                        font-size:1em;
+                    }
+                }
+            }
+            hr{
+                width:70%;
+                background-color:#14426f;
+            }
+        }
+    }
+}
+
+
+#actualite{
+    padding-top:80px;
+    display: none;
+    .actual{
+        border-radius:50%;
+        box-shadow:0 0 5px 1px #555;
+        float:right;
+        margin:-20px 20px 0 0;
+        width:20px;
+        height:20px;
+        text-align:center;
+        color:#666;
+        cursor:pointer;   
+        span{
+            margin-top:5px;
+        }     
+        h2{
+            color: #14426f; 
+            text-shadow: 0 0 3px #444; 
+            text-align:center;
+        }
+    }
+    .actual2{
+        margin:10px 0 20px;
+    }
+}
+
+/* ========== FOOTER ========== */
+footer {
+  padding: 10px 0;
+  background-color: black;
+}
+footer p {
+  margin: 0;
+}
+
+
+/* ==================== >768 ==================== */
+@media (min-width: 768px) {
+    .navbar-custom {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: none;
+        letter-spacing: 1px;
+        background: transparent;
+        -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+        -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+        transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+        background: url(img/27.jpg) bottom center;
+        .top-nav-collapse {
+            padding: 0;
+            background: black;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .content-section {
+        padding-top: 100px;
+    }
+    .download-section {
+        padding: 100px 0;
+    }
+    #map {
+        height: 400px;
+        margin-top: 250px;
+    }
+    .navbar-header{
+        background: url(img/27.jpg) no-repeat bottom center scroll;   
+        a{
+            font-size: 1em;
+            &:hover{
+                text-decoration: none;
+                color: #1d9b6c;                
+            }
+        }
+    }
+    #closelogin {
+        font-size: 1em;
+    }
+    .headMenu{
+        margin-right:10px;
+        background-image: none;
+    }
+    .btn{
+        img{
+            width: 100%;
+        }
+    }
+    #login{
+        padding-top: 270px;
+        a{
+            margin: 0 auto;
+            text-decoration: none;
+        }
+        img{
+            margin: -70px auto 20px;
+            padding:0;
+        }
+        label{
+            font: 1.25em/1em Montserrat;
+        }
+    }
+}
+
+@media(min-width:770px)and(max-width:1100px){
+    #statistics{
+        div{
+            div{ 
+                p{
+                    font: 18px/18px Montserrat;
+                    margin-top: 8px;
+                }
+                div{
+                    width: 170px;
+                    height: 170px;
+                    p{
+                        font: 42px/160px Montserrat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-header{
+        background: url(img/27.jpg) no-repeat bottom center scroll;   
+        a {
+            font-size: 0.8em;
+            &:hover{
+                text-decoration: none;
+                color: #1d9b6c;                
+            }
+        }
+    }
+    .btn{
+        img{
+            width: 100%;
+        }
+    }
+    #login{
+        padding-top: 350px;
+        img{
+            margin: -70px auto 20px;
+        }
+    }
+}
+
+
+/* ==================== <480 && >768 ==================== */
+
+@media (min-width: 480px) and (max-width: 768px) {
+    #acceuil h1, #statistics h1{
+        margin-top: 25px;
+        font-size: 1.9em;
+    }
+    #closelogin {
+        font-size: .9em;
+    }
+    .headMenu{
+        margin-right:0;
+        background: url(img/27.jpg) no-repeat top center;
+    }
+    #notreequipe h3{
+        font-size: 150%;
+    }
+    .motfondateur  p {
+        font-size:1.2em;
+        line-height:1.15em;
+    }
+    #login{
+        padding-top: 250px;
+        img{
+            margin: -70px auto 20px;
+        }
+        label{
+            font: 1.25em/1em Montserrat;
+        }
+    }
+    #statistics{
+        div{
+            div{ 
+                p{
+                    font: 18px/18px Montserrat;
+                }
+                div{
+                    width: 125px;
+                    height: 125px;
+                    p{
+                        font: 34px/100px Montserrat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==================== <480 ==================== */
+@media (max-width: 480px) {
+    #accueil h1, #statistics h1{
+        margin-top: 30px;
+        font-size: 1.8em;
+    }
+    #accueil{
+        margin-bottom: 30px;
+        p{
+            font: 1.6em/1.2em roboto;
+        }
+    }
+    #closelogin {
+        font-size: .8em;
+    }
+    .headMenu{
+        margin-right:0;
+        background: url(img/27.jpg) no-repeat top center;
+    }
+    #notreequipe h3{
+        font-size: 110%;
+    }
+    #login{
+        padding-top: 200px;
+        img{
+            margin: -70px auto 20px;
+        }
+        label{
+            font: 1em/1em Montserrat;
+        }
+    }
+    #statistics{
+        div{
+            div{ 
+                p{
+                    font: 18px/18px Montserrat;
+                }
+                div{
+                    width: 160px;
+                    height: 160px;
+                    p{
+                        font: 34px/130px Montserrat;
+                    }
+                }
+            }
+        }
+    }
+}
